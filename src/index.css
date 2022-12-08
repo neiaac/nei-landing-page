@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Satoshi Bold";
+  src: url(../assets/fonts/Satoshi-Bold.otf);
+}
+
+#preload-font {
+  font-family: Satoshi Bold;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  display: inline-block;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  border: 0;
+  overflow: hidden;
+  display: block;
+}
+
+canvas {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  cursor: pointer;
+}
