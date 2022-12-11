@@ -102,8 +102,9 @@ function sleep(ms) {
 async function fade(canvas, ctx) {
   var op = 1;
   var out = true;
+  await new Promise((r) => setTimeout(r, 2000));
   setInterval(async () => {
-    if (op < 0.1) {
+    if (op < 0.2) {
       current = (current + 1) % bgColors.length;
       draw(canvas, ctx);
       out = false;
